@@ -240,7 +240,7 @@ log_config = /etc/openstack/logging.conf
 
 # (Optional) The base directory used for relative --log-file
 # paths (string value)
-#log_dir=<None>
+log_dir=<%= node["openstack"]["orchestration"]["log_dir"] %>
 
 # Use syslog for logging. (boolean value)
 #use_syslog=false

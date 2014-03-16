@@ -62,6 +62,7 @@ default['openstack']['orchestration']['api']['auth']['cache_dir'] = '/var/cache/
 default['openstack']['orchestration']['syslog']['use'] = false
 default['openstack']['orchestration']['syslog']['facility'] = 'LOG_LOCAL2'
 default['openstack']['orchestration']['syslog']['config_facility'] = 'local2'
+default['openstack']['orchestration']['log_dir'] = nil
 
 # Common rpc definitions
 default['openstack']['orchestration']['rpc_thread_pool_size'] = 64
