@@ -69,6 +69,8 @@ default['openstack']['orchestration']['rpc_thread_pool_size'] = 64
 default['openstack']['orchestration']['rpc_conn_pool_size'] = 30
 default['openstack']['orchestration']['rpc_response_timeout'] = 60
 
+default['openstack']['orchestration']['handle_api_paste_ini'] = false
+
 # platform-specific settings
 case platform
 when 'fedora', 'redhat', 'centos' # :pragma-foodcritic: ~FC024 - won't fix this

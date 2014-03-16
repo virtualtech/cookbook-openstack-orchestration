@@ -39,6 +39,7 @@ service 'heat-api-cfn' do
 end
 
 template '/etc/heat/api-paste.ini' do
+  only_if { node['openstack']['orchestration']['handle_api_paste_ini'] }
   source 'api-paste.ini.erb'
   group  node['openstack']['orchestration']['group']
   owner  node['openstack']['orchestration']['user']
